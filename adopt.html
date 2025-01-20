@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        .project-buttons {
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .languages-list, .courses-list {
+            margin-left: 20px;
+        }
+        .courses-list {
+            list-style-type: decimal;
+        }
+        .languages-list {
+            list-style-type: disc;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p><strong>Date of Birth:</strong> January 1, 1990</p>
+        <p><strong>Education:</strong> Bachelor's Degree in Computer Science</p>
+        <p><strong>Projects I Worked On:</strong></p>
+        <ul>
+            <li>
+                Project 1: Web Development Portfolio
+                <div class="project-buttons">
+                    <button onclick="window.location.href='https://example.com/project1'">View Project</button>
+                </div>
+            </li>
+            <li>
+                Project 2: Mobile App for Task Management
+                <div class="project-buttons">
+                    <button onclick="window.location.href='https://example.com/project2'">View Project</button>
+                </div>
+            </li>
+        </ul>
+
+        <p><strong>Current Job:</strong> Software Developer at XYZ Corp</p>
+        <p><strong>Languages:</strong></p>
+        <ul class="languages-list">
+            <li>English</li>
+            <li>Spanish</li>
+            <li>French</li>
+        </ul>
+
+        <p><strong>Activities:</strong> 
+            I enjoy hiking, reading tech blogs, and contributing to open-source projects.
+        </p>
+
+        <p><strong>Courses I Attended:</strong></p>
+        <ol class="courses-list">
+            <li>Advanced Web Development - 2025</li>
+            <li>Introduction to AI - 2024</li>
+            <li>Mobile Development Basics - 2023</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Contact Form</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="request">Request:</label>
+            <textarea id="request" name="request" required></textarea>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
